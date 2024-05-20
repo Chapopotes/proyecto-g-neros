@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="principal.css">
+    <title>Géneros</title>
+     <link rel="icon" type="image/png" href="C:\Users\INNOVA TEC\Documents\PÁGINA WEB CBTIS\pag Eimy\imagenes\icono.webp">
+</head>
+
+<div class="container">
+  <div class="slide">
+    <div class="item" style="background-image: url(https://lumierenoiremusique.files.wordpress.com/2022/03/ghost.jpg?w=952);">
+      <div class="content">
+        <div class="name">ROCK</div>
+        <div class="des">Rebeldía y Resonancia: El Viaje del Rock a Través de las Décadas</div>
+        <button>Ver más...</button>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://c.wallhere.com/photos/66/70/Kryoman_EDM_DJ_music_rave_Electro_house_music_drum_and_bass-113377.jpg!d);">
+      <div class="content">
+        <div class="name">ELECTRONICA</div>
+        <div class="des">La Revolución Digital: Explorando la Evolución de la Música Electrónica</div>
+        <button>Ver más...</button>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://wallpapers.com/images/hd/kendrick-lamar-in-black-and-white-hd5btyd7aktw5a19.jpg);">
+      <div class="content">
+        <div class="name">HIP HOP</div>
+        <div class="des">THE WORLD IS YOURS<BR> El Impacto del Hip Hop en la Cultura Contemporánea</div>
+        <button>Ver más...</button>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://www.billboard.com/wp-content/uploads/media/Celia-Cruz-1978-billboard-1548.jpg?w=942&h=623&crop=1);">
+      <div class="content">
+        <div class="name">SALSA</div>
+        <div class="des">Sabor y Ritmo: La Historia y el Legado de la Salsa en el Mundo</div>
+        <button href="file:///E:/proyecto%204/plantillaV.html">Ver más...</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="button">
+    <button class="prev"><i class="fa-solid fa-right-arrow"></i></button>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
+<script type="text/javascript">
+  
+  const $next = document.querySelector('.next');
+const $prev = document.querySelector('.prev');
+
+$next.addEventListener(
+  'click',
+  () => {
+    const items = document.querySelectorAll('.item');
+    document.querySelector('.slide').appendChild(items[0]);
+  },
+);
+
+$prev.addEventListener(
+  'click',
+  () => {
+    const items = document.querySelectorAll('.item');
+    document.querySelector('.slide').prepend(items[items.length - 1]);
+  },
+);
+</script>
+
+<p>
+Info de contacto:
+<br>
+</p>
+<p>
+  Herrera Solano Eimy Cristel
+  Tel: 2285110106
+  Correo: eimyherrera8@gmail.com
+</p>
+<p>
+  Pérez Monroy Ana Paloma
+  Tel: 2282636455
+  Correo: tnta5761@gmail.com
+</p>
+<p>
+  León Pérez Victoria Oshahao
+  Tel: 2286022133
+  Correo: shinobu12kocho.1@gmail.com
+</p>
+<p>
+  Morales Sánchez Sofía Nicole
+  Tel: 2285441256
+  Correo: clownbonnie252@gmail.com 
+</p>
+</body>
+</html>
